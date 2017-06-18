@@ -29,5 +29,7 @@ namespace MSMS.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Institute> Institute { get; set; }
     }
 }
