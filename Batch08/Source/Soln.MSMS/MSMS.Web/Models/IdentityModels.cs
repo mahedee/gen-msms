@@ -31,5 +31,6 @@ namespace MSMS.Web.Models
         }
 
         public DbSet<Institute> Institute { get; set; }
+        public DbSet<ClassInfo> ClassInfo { get; set; }
     }
 }
