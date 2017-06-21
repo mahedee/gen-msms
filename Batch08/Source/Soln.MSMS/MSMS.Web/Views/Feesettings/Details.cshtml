@@ -1,0 +1,42 @@
+﻿@model MSMS.Web.Models.FeeSettings
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FeeSettings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassInfo.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassInfo.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthlyFee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonthlyFee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EffectiveDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EffectiveDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

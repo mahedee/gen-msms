@@ -79,5 +79,5 @@ F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\bin\M
 F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.dll
 F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.pdb
-F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.firstmig.resources
+F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.initmig.resources
 F:\skundu\ClassTwentySeven\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csproj.GenerateResource.Cache
