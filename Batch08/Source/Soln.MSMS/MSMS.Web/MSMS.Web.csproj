@@ -202,6 +202,8 @@
     <Compile Include="Controllers\InstitutesController.cs" />
     <Compile Include="Controllers\LookupController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\SubjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,6 +215,14 @@
     <Compile Include="Migrations\201706220539288_mig2.Designer.cs">
       <DependentUpon>201706220539288_mig2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706220747124_subject.cs" />
+    <Compile Include="Migrations\201706220747124_subject.Designer.cs">
+      <DependentUpon>201706220747124_subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706220806227_students.cs" />
+    <Compile Include="Migrations\201706220806227_students.Designer.cs">
+      <DependentUpon>201706220806227_students.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -223,6 +233,8 @@
     <Compile Include="Models\LookupVM.cs" />
     <Compile Include="Models\Lookup.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -388,6 +400,16 @@
     <Content Include="Views\Lookup\Details.cshtml" />
     <Content Include="Views\Lookup\Edit.cshtml" />
     <Content Include="Views\Lookup\Index.cshtml" />
+    <Content Include="Views\Subjects\Create.cshtml" />
+    <Content Include="Views\Subjects\Edit.cshtml" />
+    <Content Include="Views\Subjects\Delete.cshtml" />
+    <Content Include="Views\Subjects\Details.cshtml" />
+    <Content Include="Views\Subjects\Index.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -404,6 +426,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706220539288_mig2.resx">
       <DependentUpon>201706220539288_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706220747124_subject.resx">
+      <DependentUpon>201706220747124_subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706220806227_students.resx">
+      <DependentUpon>201706220806227_students.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

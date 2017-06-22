@@ -38,6 +38,11 @@ namespace MSMS.Web.Controllers
         // GET: Students/Create
         public ActionResult Create()
         {
+            ViewBag.ClassId = new SelectList(db.ClassInfo, "Id", "ClassName");
+
+            List<Lookup> lstLookup = new List<Lookup>();
+            lstLookup = db.Lookup.Where(p => p.ParentId == 1).ToList();
+            ViewBag.GroupId = new SelectList(lstLookup, "Id", "Name");
             return View();
         }
 

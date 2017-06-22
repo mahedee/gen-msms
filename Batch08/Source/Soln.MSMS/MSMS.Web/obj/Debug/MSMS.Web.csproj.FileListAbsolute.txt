@@ -165,4 +165,5 @@ G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.pdb
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.firstmig.resources
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csproj.GenerateResource.Cache
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.mig2.resources
-G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csprojResolveAssemblyReference.cache
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.subject.resources
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.students.resources

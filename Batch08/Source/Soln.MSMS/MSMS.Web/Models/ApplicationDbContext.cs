@@ -25,9 +25,11 @@ namespace MSMS.Web.Models
 
         public DbSet<Lookup> Lookup { get; set; }
 
-        /*
         public DbSet<Subject> Subject { get; set; }
+        
         public DbSet<Student> Student { get; set; }
+        
+        /*
         public DbSet<Guardian> Guardian { get; set; }
         */
     }
