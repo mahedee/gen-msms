@@ -18,20 +18,5 @@ namespace MSMS.Web.Models
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
-        {
-        }
-
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
-
-        public DbSet<Institute> Institute { get; set; }
-        public DbSet<ClassInfo> ClassInfo { get; set; }
-        public DbSet<FeeSettings> Feesettings { get; set; }
-    }
+  
 }

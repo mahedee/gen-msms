@@ -7,13 +7,13 @@ namespace MSMS.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class initmig : IMigrationMetadata
+    public sealed partial class secondmig : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initmig));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(secondmig));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706211333281_initmig"; }
+            get { return "201706181234036_secondmig"; }
         }
         
         string IMigrationMetadata.Source

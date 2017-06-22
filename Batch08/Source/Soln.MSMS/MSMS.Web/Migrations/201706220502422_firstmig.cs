@@ -3,7 +3,7 @@ namespace MSMS.Web.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initmig : DbMigration
+    public partial class firstmig : DbMigration
     {
         public override void Up()
         {
