@@ -43,17 +43,10 @@ namespace MSMS.Web.Controllers
 
         // POST: ClassInfoes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-<<<<<<< HEAD
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,className")] ClassInfo classInfo)
-=======
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ClassName")] ClassInfo classInfo)
->>>>>>> 44f0eec9e556eb4d5ce1f98f81ed56d1ee5fdbfb
         {
             if (ModelState.IsValid)
             {
@@ -82,17 +75,10 @@ namespace MSMS.Web.Controllers
 
         // POST: ClassInfoes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-<<<<<<< HEAD
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id,className")] ClassInfo classInfo)
-=======
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,ClassName")] ClassInfo classInfo)
->>>>>>> 44f0eec9e556eb4d5ce1f98f81ed56d1ee5fdbfb
         {
             if (ModelState.IsValid)
             {
