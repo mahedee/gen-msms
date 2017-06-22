@@ -160,9 +160,17 @@ G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\bin\Microsoft.Owin.Sec
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\bin\Microsoft.Owin.Security.Google.xml
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\bin\Microsoft.Owin.Security.Twitter.xml
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+<<<<<<< HEAD
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.dll
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.pdb
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.firstmig.resources
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csproj.GenerateResource.Cache
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.mig2.resources
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csprojResolveAssemblyReference.cache
+=======
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.firstmig.resources
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csproj.GenerateResource.Cache
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.dll
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.pdb
+G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.secondmig.resources
+>>>>>>> 44f0eec9e556eb4d5ce1f98f81ed56d1ee5fdbfb
