@@ -280,7 +280,7 @@ th {
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*-moz-osx-font-smoothing: grayscale;*/
 }
 .glyphicon-asterisk:before {
   content: "\002a";
@@ -1272,10 +1272,12 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+  text-align: center;
 }
 h3,
 .h3 {
   font-size: 24px;
+  text-align: center;
 }
 h4,
 .h4 {
@@ -1292,6 +1294,20 @@ h6,
 p {
   margin: 0 0 10px;
 }
+
+.button{
+    padding: 5px;        
+    border: 1px outset #033c73;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    background-color: #c4e3f3;
+}
+
+.button:hover{
+    text-decoration: none;
+}
+
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
@@ -1602,8 +1618,8 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
-  }
+    width: 1220px;    
+  }  
 }
 .container-fluid {
   margin-right: auto;
@@ -2274,10 +2290,11 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 2px; 
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  text-align: center;
+  border: 2px solid #2fa4e7;  
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -5155,7 +5172,7 @@ a.thumbnail.active {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  -webkit-background-size: 40px 40px;
+  /*-webkit-background-size: 40px 40px;*/
           background-size: 40px 40px;
 }
 .progress.active .progress-bar,

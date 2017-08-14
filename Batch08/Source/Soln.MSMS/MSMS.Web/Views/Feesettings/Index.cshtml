@@ -4,10 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h3>Monthly Fee Settings</h3>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a class="button" href="~/FeeSettings/Create">Fee Settings</a>
 </p>
 <table class="table">
     <tr>
@@ -20,7 +21,7 @@
         <th>
             @Html.DisplayNameFor(model => model.EffectiveDate)
         </th>
-        <th></th>
+        <th>Option</th>
     </tr>
 
 @foreach (var item in Model) {
