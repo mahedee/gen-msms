@@ -26,7 +26,10 @@ namespace MSMS.Web.Models
         public DbSet<Subject> Subject { get; set; }      
         public DbSet<Student> Student { get; set; }
         public DbSet<Employee> Employees { get; set; }       
+<<<<<<< HEAD
         public DbSet<ClassSchedule> ClassSchedule { get; set; }
+=======
+>>>>>>> origin/master
 
         /*
         public DbSet<Guardian> Guardian { get; set; }

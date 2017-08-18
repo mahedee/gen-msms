@@ -17,7 +17,11 @@ namespace MSMS.Web.Controllers
         // GET: ClassSchedules
         public ActionResult Index()
         {
+<<<<<<< HEAD
             return View(db.ClassSchedule.ToList());
+=======
+            return View(db.ClassSchedules.ToList());
+>>>>>>> origin/master
         }
 
         // GET: ClassSchedules/Details/5
@@ -27,7 +31,11 @@ namespace MSMS.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+<<<<<<< HEAD
             ClassSchedule classSchedule = db.ClassSchedule.Find(id);
+=======
+            ClassSchedule classSchedule = db.ClassSchedules.Find(id);
+>>>>>>> origin/master
             if (classSchedule == null)
             {
                 return HttpNotFound();
@@ -70,7 +78,11 @@ namespace MSMS.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 db.ClassSchedule.Add(classSchedule);
+=======
+                db.ClassSchedules.Add(classSchedule);
+>>>>>>> origin/master
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -85,7 +97,11 @@ namespace MSMS.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+<<<<<<< HEAD
             ClassSchedule classSchedule = db.ClassSchedule.Find(id);
+=======
+            ClassSchedule classSchedule = db.ClassSchedules.Find(id);
+>>>>>>> origin/master
             if (classSchedule == null)
             {
                 return HttpNotFound();
@@ -116,7 +132,11 @@ namespace MSMS.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+<<<<<<< HEAD
             ClassSchedule classSchedule = db.ClassSchedule.Find(id);
+=======
+            ClassSchedule classSchedule = db.ClassSchedules.Find(id);
+>>>>>>> origin/master
             if (classSchedule == null)
             {
                 return HttpNotFound();
@@ -129,8 +149,13 @@ namespace MSMS.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+<<<<<<< HEAD
             ClassSchedule classSchedule = db.ClassSchedule.Find(id);
             db.ClassSchedule.Remove(classSchedule);
+=======
+            ClassSchedule classSchedule = db.ClassSchedules.Find(id);
+            db.ClassSchedules.Remove(classSchedule);
+>>>>>>> origin/master
             db.SaveChanges();
             return RedirectToAction("Index");
         }

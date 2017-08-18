@@ -262,5 +262,8 @@ F:\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.dll
 F:\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.pdb
 F:\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.bugfiix.resources
 F:\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.bugfiix.resources
 G:\Github\gen-proj-msms\Batch08\Source\Soln.MSMS\MSMS.Web\obj\Debug\MSMS.Web.Migrations.newmig.resources
+=======
+>>>>>>> origin/master
