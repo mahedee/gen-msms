@@ -72,7 +72,7 @@ namespace MSMS.Web.Controllers
                 objLookup.Name = lookupVM.Name;
                 objLookup.Description = lookupVM.Description;
 
-                if(lookupVM.IsParent == true)
+                if (lookupVM.IsParent == true)
                 {
                     objLookup.ParentId = lookupVM.ParentId;
                 }
@@ -87,7 +87,7 @@ namespace MSMS.Web.Controllers
         }
 
 
-        /*
+
         // GET: Lookup/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -95,58 +95,76 @@ namespace MSMS.Web.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            LookupVM lookupVM = db.LookupVMs.Find(id);
-            if (lookupVM == null)
+
+            Lookup lookup = db.Lookup.Find(id);
+            
+
+            LookupVM objLookupVm = new LookupVM();
+
+            //LookupVM lookupVM = db.LookupVMs.Find(id);
+            if (lookup == null)
             {
                 return HttpNotFound();
             }
-            return View(lookupVM);
-        }
-
-        // POST: Lookup/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,IsParent,Description,ParentId")] LookupVM lookupVM)
-        {
-            if (ModelState.IsValid)
+            else
             {
-                db.Entry(lookupVM).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                objLookupVm.Id = lookup.Id;
+                objLookupVm.Name = lookup.Name;
+                objLookupVm.Description = lookup.Description;
+                objLookupVm.ParentId = lookup.ParentId;
             }
-            return View(lookupVM);
+
+            ViewBag.ParentId = new SelectList(db.Lookup, "Id", "Name");
+
+            return View(objLookupVm);
         }
 
-        // GET: Lookup/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            LookupVM lookupVM = db.LookupVMs.Find(id);
-            if (lookupVM == null)
-            {
-                return HttpNotFound();
-            }
-            return View(lookupVM);
-        }
+        /*
 
-        // POST: Lookup/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            LookupVM lookupVM = db.LookupVMs.Find(id);
-            db.LookupVMs.Remove(lookupVM);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
+// POST: Lookup/Edit/5
+// To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+// more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+[HttpPost]
+[ValidateAntiForgeryToken]
+public ActionResult Edit([Bind(Include = "Id,Name,IsParent,Description,ParentId")] LookupVM lookupVM)
+{
+    if (ModelState.IsValid)
+    {
+        db.Entry(lookupVM).State = EntityState.Modified;
+        db.SaveChanges();
+        return RedirectToAction("Index");
+    }
+    return View(lookupVM);
+}
+
+// GET: Lookup/Delete/5
+public ActionResult Delete(int? id)
+{
+    if (id == null)
+    {
+        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+    }
+    LookupVM lookupVM = db.LookupVMs.Find(id);
+    if (lookupVM == null)
+    {
+        return HttpNotFound();
+    }
+    return View(lookupVM);
+}
+
+// POST: Lookup/Delete/5
+[HttpPost, ActionName("Delete")]
+[ValidateAntiForgeryToken]
+public ActionResult DeleteConfirmed(int id)
+{
+    LookupVM lookupVM = db.LookupVMs.Find(id);
+    db.LookupVMs.Remove(lookupVM);
+    db.SaveChanges();
+    return RedirectToAction("Index");
+}
 
 
-    */
+*/
         protected override void Dispose(bool disposing)
         {
             if (disposing)

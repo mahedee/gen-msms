@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 using MSMS.Web.Models;
@@ -12,7 +13,7 @@ namespace MSMS.Web.Controllers
 {
     public class StudentsController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private ApplicationDbContext db = new ApplicationDbContext();        
 
         // GET: Students
         public ActionResult Index()
@@ -40,9 +41,26 @@ namespace MSMS.Web.Controllers
         {
             ViewBag.ClassId = new SelectList(db.ClassInfo, "Id", "ClassName");
 
-            List<Lookup> lstLookup = new List<Lookup>();
-            lstLookup = db.Lookup.Where(p => p.ParentId == 1).ToList();
-            ViewBag.GroupId = new SelectList(lstLookup, "Id", "Name");
+            List<Lookup> GrpLookup = new List<Lookup>();
+            GrpLookup = db.Lookup.Where(p => p.ParentId == 1).ToList();
+            ViewBag.GroupId = new SelectList(GrpLookup, "Id", "Name");
+
+            List<Lookup> SecLookup = new List<Lookup>();
+            SecLookup = db.Lookup.Where(p => p.ParentId == 7).ToList();
+            ViewBag.SectionId = new SelectList(SecLookup, "Id", "Name");
+
+            List<Lookup> ShiftLookup = new List<Lookup>();
+            ShiftLookup = db.Lookup.Where(p => p.ParentId == 3).ToList();
+            ViewBag.ShiftId = new SelectList(ShiftLookup, "Id", "Name");
+
+            List<Lookup> GenderLookup = new List<Lookup>();
+            GenderLookup = db.Lookup.Where(p => p.ParentId == 4).ToList();
+            ViewBag.GenderLookup = new SelectList(GenderLookup, "Id", "Name");
+
+            List<Lookup> AdmRefLookup = new List<Lookup>();
+            AdmRefLookup = db.Lookup.Where(p => p.ParentId == 13).ToList();
+            ViewBag.AdmissionReferanceId = new SelectList(AdmRefLookup, "Id", "Name");
+
             return View();
         }
 
@@ -51,7 +69,7 @@ namespace MSMS.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ClassId,Batch,StudentId,StudentName,ClassRoll,GroupId,SectionId,ShiftId,StudentCell,StudentEmail,PEC,JSC,SSC,GenderId,AdmissionReferance,ReferanceName,Discount")] Student student)
+        public ActionResult Create([Bind(Include = "Id,ClassId,Batch,StudentId,StudentName,ClassRoll,GroupId,SectionId,ShiftId,CellNumber,Email,PEC,JSC,SSC,GenderId,AdmissionReferanceId,ReferanceName,Discount")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -75,6 +93,24 @@ namespace MSMS.Web.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.ClassId = new SelectList(db.ClassInfo, "Id", "ClassName",student.ClassId);
+
+            List<Lookup> GrpLookup = new List<Lookup>();
+            GrpLookup = db.Lookup.Where(p => p.ParentId == 1).ToList();
+            ViewBag.GroupId = new SelectList(GrpLookup, "Id", "Name");
+
+            List<Lookup> SecLookup = new List<Lookup>();
+            SecLookup = db.Lookup.Where(p => p.ParentId == 7).ToList();
+            ViewBag.SectionId = new SelectList(SecLookup, "Id", "Name");
+
+            List<Lookup> ShiftLookup = new List<Lookup>();
+            ShiftLookup = db.Lookup.Where(p => p.ParentId == 3).ToList();
+            ViewBag.ShiftId = new SelectList(ShiftLookup, "Id", "Name");
+
+            List<Lookup> AdmRefLookup = new List<Lookup>();
+            AdmRefLookup = db.Lookup.Where(p => p.ParentId == 13).ToList();
+            ViewBag.AdmissionReferanceId = new SelectList(AdmRefLookup, "Id", "Name");
+
             return View(student);
         }
 
@@ -83,7 +119,7 @@ namespace MSMS.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,ClassId,Batch,StudentId,StudentName,ClassRoll,GroupId,SectionId,ShiftId,StudentCell,StudentEmail,PEC,JSC,SSC,GenderId,AdmissionReferance,ReferanceName,Discount")] Student student)
+        public ActionResult Edit([Bind(Include = "Id,ClassId,Batch,StudentId,StudentName,ClassRoll,GroupId,SectionId,ShiftId,CellNumber,Email,PEC,JSC,SSC,GenderId,AdmissionReferanceId,ReferanceName,Discount")] Student student)
         {
             if (ModelState.IsValid)
             {

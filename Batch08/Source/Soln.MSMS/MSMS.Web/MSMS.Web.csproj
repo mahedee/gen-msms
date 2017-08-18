@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClassInfoesController.cs" />
+    <Compile Include="Controllers\ClassSchedulesController.cs" />
     <Compile Include="Controllers\FeeSettingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstitutesController.cs" />
@@ -223,10 +224,32 @@
     <Compile Include="Migrations\201706220806227_students.Designer.cs">
       <DependentUpon>201706220806227_students.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706221523446_migr1.cs" />
+    <Compile Include="Migrations\201706221523446_migr1.Designer.cs">
+      <DependentUpon>201706221523446_migr1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706221557387_stdtbl.cs" />
+    <Compile Include="Migrations\201706221557387_stdtbl.Designer.cs">
+      <DependentUpon>201706221557387_stdtbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706241407129_ClsS.cs" />
+    <Compile Include="Migrations\201706241407129_ClsS.Designer.cs">
+      <DependentUpon>201706241407129_ClsS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708140703422_bugfiix.cs" />
+    <Compile Include="Migrations\201708140703422_bugfiix.Designer.cs">
+      <DependentUpon>201708140703422_bugfiix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708181243216_newmig.cs" />
+    <Compile Include="Migrations\201708181243216_newmig.Designer.cs">
+      <DependentUpon>201708181243216_newmig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ClassInfo.cs" />
+    <Compile Include="Models\ClassSchedule.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\FeeSettings.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Institute.cs" />
@@ -410,6 +433,11 @@
     <Content Include="Views\Students\Create.cshtml" />
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\ClassSchedules\Create.cshtml" />
+    <Content Include="Views\ClassSchedules\Delete.cshtml" />
+    <Content Include="Views\ClassSchedules\Details.cshtml" />
+    <Content Include="Views\ClassSchedules\Edit.cshtml" />
+    <Content Include="Views\ClassSchedules\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -432,6 +460,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706220806227_students.resx">
       <DependentUpon>201706220806227_students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706221523446_migr1.resx">
+      <DependentUpon>201706221523446_migr1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706221557387_stdtbl.resx">
+      <DependentUpon>201706221557387_stdtbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706241407129_ClsS.resx">
+      <DependentUpon>201706241407129_ClsS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708140703422_bugfiix.resx">
+      <DependentUpon>201708140703422_bugfiix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181243216_newmig.resx">
+      <DependentUpon>201708181243216_newmig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

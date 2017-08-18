@@ -12,7 +12,7 @@ namespace MSMS.Web.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-
+        //[Display(Name ="Class Name")]
         public int ClassId { get; set; }
         [ForeignKey("ClassId")]
         public virtual ClassInfo ClassInfo { get; set; }

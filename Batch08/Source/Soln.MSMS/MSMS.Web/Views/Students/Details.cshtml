@@ -4,10 +4,9 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h3>Student Informatin Details</h3>
 
-<div>
-    <h4>Student</h4>
+<div>    
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -115,11 +114,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AdmissionReferance)
+            @Html.DisplayNameFor(model => model.AdmissionReferanceId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AdmissionReferance)
+            @Html.DisplayFor(model => model.AdmissionReferanceId)
         </dd>
 
         <dt>
@@ -142,5 +141,6 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @*@Html.ActionLink("Back to List", "Index")*@
+    <a class="button" href="~/Students/Index">Back To List</a>
 </p>

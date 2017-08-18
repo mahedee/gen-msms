@@ -4,17 +4,18 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h3>All Class List</h3>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a class="button" href="~/ClassInfoes/Create">Add Class</a>
 </p>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ClassName)
         </th>
-        <th></th>
+        <th>Option</th>
     </tr>
 
 @foreach (var item in Model) {

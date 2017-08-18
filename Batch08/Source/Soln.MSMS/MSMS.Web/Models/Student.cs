@@ -12,9 +12,9 @@ namespace MSMS.Web.Models
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Display(Name = "Class")]
+        //[Display(Name = "Class")]
         public int ClassId { get; set; }
-        [ForeignKey("ClassId")]       
+        [ForeignKey("ClassId")]
         public virtual ClassInfo ClassInfo { get; set; }
 
 
@@ -33,13 +33,10 @@ namespace MSMS.Web.Models
 
         [Display(Name = "Roll Number")]
         public int ClassRoll { get; set; }
-
-
-        [Display(Name = "Group")]
+      
         public int GroupId { get; set; }
 
-        [Display(Name = "Section")]
-        public int SectionId { get; set; }
+        public int SectionId { get; set; }     
 
         [Display(Name = "Shift")]
         public int ShiftId { get; set; }
@@ -51,18 +48,25 @@ namespace MSMS.Web.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
+        [Display(Name = "G.P.A(P.E.C)")]
         public double? PEC { get; set; }
 
+        [Display(Name = "G.P.A(J.S.C)")]
         public double? JSC { get; set; }
 
+        [Display(Name = "G.P.A(S.S.C)")]
         public double? SSC { get; set; }
 
+        //[Display(Name = "Gender")]
         public char GenderId { get; set; }
 
-        public int AdmissionReferance { get; set; }
+        [Display(Name = "Admission Referance")]
+        public int AdmissionReferanceId { get; set; }
 
+        [Display(Name = "Referance Name")]
         public string ReferanceName { get; set; }
 
+        [Display(Name = "Discount")]
         public double Discount { get; set; }      
     }
 }

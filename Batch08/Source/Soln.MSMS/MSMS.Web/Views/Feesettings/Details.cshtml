@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h3>Class wise Monthly Fee Details</h3>
 
 <div>
-    <h4>FeeSettings</h4>
+    
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -38,5 +38,5 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    <a class="button" href="~/FeeSettings/Index">Back To List</a>
 </p>

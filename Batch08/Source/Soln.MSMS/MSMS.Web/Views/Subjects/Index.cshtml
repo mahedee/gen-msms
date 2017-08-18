@@ -4,10 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>All Subject List</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a class="button" href="~/Subjects/Create">Add New Subject</a>
 </p>
 <table class="table">
     <tr>
@@ -20,7 +21,7 @@
         <th>
             @Html.DisplayNameFor(model => model.SubjectName)
         </th>
-        <th></th>
+        <th>Option</th>
     </tr>
 
 @foreach (var item in Model) {

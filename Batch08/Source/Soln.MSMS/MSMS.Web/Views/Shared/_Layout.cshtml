@@ -23,15 +23,21 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes" aria-expanded="false">Settings <span class="caret"></span></a>
-                        <ul class="dropdown-menu" aria-labelledby="themes">
+                        <ul class="dropdown-menu" aria-labelledby="themes">                            
                             <li>
-                                @Html.ActionLink("Institution", "Index", "Institutes")
-                                @Html.ActionLink("Class Information", "Index", "ClassInfoes");
-                                @Html.ActionLink("Fee Settings", "Index", "Feesettings");
+                                @Html.ActionLink("Institution", "Index", "Institutes")                                                             
+                            </li>
+                            <li>
+                                @Html.ActionLink("Class Information", "Index", "ClassInfoes");                                
+                            </li>
+                            <li>
+                                @Html.ActionLink("Fee Settings", "Index", "Feesettings");                           
+                            </li>
+                            <li>
                                 @Html.ActionLink("Subject Entry", "Index", "Subjects");
                                 @Html.ActionLink("Student Entry", "Index", "Students");
                                 @Html.ActionLink("Lookup Entry", "Index", "Lookup");
-                         
+                                @Html.ActionLink("Class Schedule", "Index", "ClassSchedules");
                             </li>
 
                             <li class="divider"></li>
